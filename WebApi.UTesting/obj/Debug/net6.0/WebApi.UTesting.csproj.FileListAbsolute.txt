@@ -1,0 +1,11 @@
+C:\Projetos\WebApi\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.deps.json
+C:\Projetos\WebApi\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.dll
+C:\Projetos\WebApi\WebApi.UTesting\bin\Debug\net6.0\ref\WebApi.UTesting.dll
+C:\Projetos\WebApi\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.pdb
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.AssemblyInfoInputs.cache
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.AssemblyInfo.cs
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.csproj.CoreCompileInputs.cache
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.dll
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\ref\WebApi.UTesting.dll
+C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.pdb
