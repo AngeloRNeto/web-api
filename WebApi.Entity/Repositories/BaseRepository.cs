@@ -61,8 +61,8 @@ namespace WebApi.Entity.Repositories
                     throw new ArgumentNullException("entity");
                 }
 
-                //entity.data_alteracao = DateTime.Now;
-                //entity.data_criacao = DateTime.Now;
+                entity.data_alteracao = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc);
+                entity.data_criacao = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc);
                 entity.situacao = ESituacao.Ativo;
 
                 context.Set<T>().Add(entity);
@@ -92,7 +92,9 @@ namespace WebApi.Entity.Repositories
                 }
 
                 var update = context.Set<T>().Find(entity.id);
-                update.data_alteracao = DateTime.Now;
+              
+                context.Entry<T>(update).CurrentValues.SetValues(entity);
+                update.data_alteracao = DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc);
 
                 return context.SaveChanges();
             }

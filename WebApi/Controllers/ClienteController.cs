@@ -114,7 +114,7 @@ namespace WebApi.Controllers
                 if (usu == null)
                     return BadRequest("Ocorreu um erro.");
 
-                return Ok(usu);
+                return Ok("Usuário atualizado com sucesso");
 
             }
             catch (Exception ex)

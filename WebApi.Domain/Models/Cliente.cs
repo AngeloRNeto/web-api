@@ -15,7 +15,8 @@ namespace WebApi.Domain.Models
         }
 
         public string nome { get; set; }
-        public string data_nascimento { get; set; }
+
+        public DateTime data_nascimento { get; set; }
         public string telefone { get; set; }
 
         public virtual IList<ClienteDados> cliente_dados { get; set; }
