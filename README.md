@@ -15,13 +15,5 @@
     <p> Através da interface foi implementado a injenção de depêndencia nas classes para cada necessidade;</p>
     <p> Existe um crud generico criado para ser herdado por outras classes que possuem um cadastro básico, facilitando a implementação de possiveis entidades novas; (BaseRepository)</p>
     <p> EndPoints documentados com swaggers</p>
-  <hr/><br/>
-    <p> Existe um backup dos dados cadastrados para teste no arquivo WebApi.backup. Para informações de como fazer o restore do backup acesse:
- https://blog.tecnospeed.com.br/backup-e-restore-postgresql/ </p>
-  <p> É possivel gerar novas migrations para alteração do banco de dados com os seguintes comandos: </p>
-   <p>
-   1- dotnet ef migrations add '<Nome da migration>' --project .\WebApi.Entity\WebApi.Entity.csproj --startup-project .\WebApi\WebApi.csproj<br/>
-   2- dotnet ef database update --project .\WebApi.Entity\WebApi.Entity.csproj --startup-project .\WebApi\WebApi.csproj
-  </p>
-
+  <hr/>
 
