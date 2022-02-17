@@ -1,0 +1,17 @@
+.vs/
+WebApi/bin/
+WebApi/obj/
+
+WebApi.Entity/bin/
+WebApi.Entity/obj/
+
+
+WebApi.Domain/bin/
+WebApi.Domain/obj/
+
+
+WebApi.Service/bin/
+WebApi.Service/obj/
+
+WebApi.UTesting/bin/
+WebApi.UTesting/obj/
