@@ -8,7 +8,7 @@ using WebApi.Entity.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(opts => opts.SuppressImplicitRequiredAttributeForNonNullableReferenceTypes = true);
 
 builder.Services.AddDbContext<WebContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("WebApi"))
@@ -27,6 +27,7 @@ builder.Services.AddTransient<ICarrinhoService, CarrinhoService>();
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddTransient<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddTransient<IClienteRepository, ClienteRepository>();
+builder.Services.AddTransient<IClienteDadosRepository, ClienteDadosRepository>();
 builder.Services.AddTransient<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddTransient<ICarrinhoRepository, CarrinhoRepository>();
 

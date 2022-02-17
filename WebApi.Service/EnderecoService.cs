@@ -19,20 +19,14 @@ namespace WebApi.Service
 
         public List<Endereco> GetAll<TEntity>()
         {
-            var enderecos = _repository.GetAll<Endereco>("cliente");
-
-            enderecos.ForEach(e =>
-            {
-                e.cliente_id = e.cliente.id;
-            });
+            var enderecos = _repository.GetAll<Endereco>();
 
             return enderecos;
         }
 
         public Endereco GetById(int id)
         {
-            var endereco = _repository.GetById(id, "cliente");
-            endereco.cliente_id = endereco.cliente?.id == null ? 0 : endereco.cliente.id;
+            var endereco = _repository.GetById(id);
 
             return endereco;
         }

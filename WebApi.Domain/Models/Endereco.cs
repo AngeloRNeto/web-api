@@ -19,11 +19,5 @@ namespace WebApi.Domain.Models
         public string bairro { get; set; }
         public string cep { get; set; }
         public string uf { get; set; }
-
-        [ForeignKey("cliente_id")]
-        public virtual Cliente cliente { get; set; }
-
-        [NotMapped]
-        public int cliente_id { get; set; }
     }
 }

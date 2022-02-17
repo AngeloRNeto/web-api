@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 using WebApi.Domain.Models;
 using WebApi.Domain.Services;
 
@@ -11,7 +12,7 @@ namespace WebApi.Controllers
         //dependencies
         private readonly ILogger<ClienteController> _logger;
         private readonly IClienteService _services;
-      
+
         public ClienteController(ILogger<ClienteController> logger, IClienteService services)
         {
             _logger = logger;
@@ -60,7 +61,12 @@ namespace WebApi.Controllers
                     return NotFound($"Nenhum cliente para esse Id");
                 }
 
-                return Ok(cliente);
+                cliente.cliente_dados.ToList().ForEach(e => e.cliente = null);
+                return Ok(JsonSerializer.Serialize(cliente, new JsonSerializerOptions()
+                {
+                    MaxDepth = 0,
+                    IgnoreReadOnlyProperties = true
+                }));
             }
             catch (Exception ex)
             {
@@ -77,7 +83,13 @@ namespace WebApi.Controllers
                 var clientes = _services.GetAll<Cliente>();
 
                 if (clientes.Count() > 0)
-                    return Ok(clientes);
+                {
+                    return Ok(JsonSerializer.Serialize(clientes, new JsonSerializerOptions()
+                    {
+                        MaxDepth = 0,
+                        IgnoreReadOnlyProperties = true
+                    }));
+                }
 
                 return NotFound("Sem registros.");
 
@@ -119,8 +131,8 @@ namespace WebApi.Controllers
             {
                 //if (_services.HasProduto(id))
                 //{
-                    _services.Delete(id);
-                    return Ok("Cliente Excluido.");
+                _services.Delete(id);
+                return Ok("Cliente Excluido.");
                 //}
                 //else
                 //{

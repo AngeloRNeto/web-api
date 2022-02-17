@@ -9,3 +9,15 @@ C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.csproj.CoreC
 C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.dll
 C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\ref\WebApi.UTesting.dll
 C:\Projetos\WebApi\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.pdb
+C:\Projetos\web-api\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.deps.json
+C:\Projetos\web-api\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.dll
+C:\Projetos\web-api\WebApi.UTesting\bin\Debug\net6.0\ref\WebApi.UTesting.dll
+C:\Projetos\web-api\WebApi.UTesting\bin\Debug\net6.0\WebApi.UTesting.pdb
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.csproj.AssemblyReference.cache
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.AssemblyInfoInputs.cache
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.AssemblyInfo.cs
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.csproj.CoreCompileInputs.cache
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.dll
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\ref\WebApi.UTesting.dll
+C:\Projetos\web-api\WebApi.UTesting\obj\Debug\net6.0\WebApi.UTesting.pdb

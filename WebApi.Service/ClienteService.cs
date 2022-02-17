@@ -7,9 +7,11 @@ namespace WebApi.Service
     public class ClienteService : IClienteService
     {
         private readonly IClienteRepository _repository;
-        public ClienteService(IClienteRepository repository)
+        private readonly IClienteDadosRepository _clienteDadosRepository;
+        public ClienteService(IClienteRepository repository, IClienteDadosRepository clienteDadosRepository)
         {
             _repository = repository;
+            _clienteDadosRepository = clienteDadosRepository;
         }
 
         public void Delete(int id)
@@ -19,10 +21,11 @@ namespace WebApi.Service
 
         public List<Cliente> GetAll<TEntity>()
         {
-            var clientes = _repository.GetAll<Cliente>("cliente_dados", "endereco");
+            var clientes = _repository.GetAll<Cliente>("endereco");
 
             clientes.ForEach(e =>
             {
+                e.cliente_dados = _clienteDadosRepository.GetClienteDados(e.id);
                 e.endereco_id = e.endereco.id;
             });
 
